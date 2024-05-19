@@ -1,0 +1,925 @@
+@prefix : <http://example.com/ontologies/cabBooking#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.com/ontologies/cabBooking> .
+
+<http://example.com/ontologies/cabBooking> rdf:type owl:Ontology ;
+                                           
+                                           rdfs:comment "" ;
+                                           
+                                           owl:versionIRI <http://example.com/ontologies/cabBooking/2024-05-14> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://example.com/ontologies/cabBooking#drivenBy
+
+:drivenBy rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasDistance
+
+:hasDistance rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasRating
+
+:hasRating rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasRoute
+
+:hasRoute rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasCab
+
+:hasCab rdf:type owl:ObjectProperty ;
+        
+        rdfs:domain :CabBooking ;
+        
+        rdfs:range :Cab .
+
+
+###  http://example.com/ontologies/cabBooking#hasDriver
+
+:hasDriver rdf:type owl:ObjectProperty ;
+           
+           rdfs:domain :Cab ;
+           
+           rdfs:range :Driver .
+
+
+###  http://example.com/ontologies/cabBooking#hasDropoffLocation
+
+:hasDropoffLocation rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:range :Location ;
+                     
+                     rdfs:domain :Reservation .
+
+
+###  http://example.com/ontologies/cabBooking#hasDropoffTime
+
+:hasDropoffTime rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasEndLocation
+
+:hasEndLocation rdf:type owl:ObjectProperty ;
+                
+                rdfs:range :Location ;
+                
+                rdfs:domain :Route .
+
+
+###  http://example.com/ontologies/cabBooking#hasEstimatedTime
+
+:hasEstimatedTime rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasFare
+
+:hasFare rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasLicenseNo
+
+:hasLicenseNo rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasPassenger
+
+:hasPassenger rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :CabBooking ;
+              
+              rdfs:range :Passenger .
+
+
+###  http://example.com/ontologies/cabBooking#hasPaymentMethod
+
+:hasPaymentMethod rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:domain :Reservation ;
+                   
+                   rdfs:range :PaymentMethod .
+
+
+###  http://example.com/ontologies/cabBooking#hasPickupLocation
+
+:hasPickupLocation rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:range :Location ;
+                    
+                    rdfs:domain :Reservation .
+
+
+###  http://example.com/ontologies/cabBooking#hasPickupTime
+
+:hasPickupTime rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasRecommendation
+
+:hasRecommendation rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:range :Recommendation ;
+                   
+                   rdfs:domain :Passenger .
+
+
+###  http://example.com/ontologies/cabBooking#hasReservationTime
+
+:hasReservationTime rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasReservation
+
+:hasReservation rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasSpecialRequest
+
+:hasSpecialRequest rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#hasStartLocation
+
+:hasStartLocation rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:range :Location ;
+                  
+                  rdfs:domain :Route .
+
+
+###  http://example.com/ontologies/cabBooking#isBookedBy
+
+:isBookedBy rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/ontologies/cabBooking#recommendsCab
+
+:recommendsCab rdf:type owl:ObjectProperty ;
+               
+               rdfs:domain :Recommendation .
+
+
+###  http://example.com/ontologies/cabBooking#recommendsDriver
+
+:recommendsDriver rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:domain :Recommendation .
+
+
+###  http://example.com/ontologies/cabBooking#recommendsRoute
+
+:recommendsRoute rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:domain :Recommendation .
+
+
+###  http://example.com/ontologies/cabBooking#travelThrough
+
+:travelThrough rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#
+#    Data Properties
+#
+#################################################################
+
+
+###  http://example.com/ontologies/cabBooking#address
+
+:address rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Location ;
+         
+         rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#bookingID
+
+:bookingID rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :CabBooking ;
+           
+           rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#bookingStatus
+
+:bookingStatus rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :CabBooking ;
+               
+               rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#bookingTime
+
+:bookingTime rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :CabBooking ;
+             
+             rdfs:range xsd:dateTime .
+
+
+###  http://example.com/ontologies/cabBooking#cabID
+
+:cabID rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :Cab ;
+       
+       rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#cabType
+
+:cabType rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Cab ;
+         
+         rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#coordinates
+
+:coordinates rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Location ;
+             
+             rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#distance
+
+:distance rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Route ;
+          
+          rdfs:range xsd:float .
+
+
+###  http://example.com/ontologies/cabBooking#estimatedTime
+
+:estimatedTime rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Route ;
+               
+               rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#locationID
+
+:locationID rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :Location ;
+            
+            rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#name
+
+:name rdf:type owl:DatatypeProperty ;
+      
+      rdfs:domain :Passenger ;
+      
+      rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#passengerID
+
+:passengerID rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Passenger ;
+             
+             rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#routeID
+
+:routeID rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Route ;
+         
+         rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#cabStatus
+
+:cabStatus rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Cab ;
+           
+           rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#capacity
+
+:capacity rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Cab ;
+         
+         rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#contactDetails
+
+:contactDetails rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Passenger ;
+                
+                rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#driverID
+
+:driverID rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Driver ;
+          
+          rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#dropoffTime
+
+:dropoffTime rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Reservation ;
+              
+              rdfs:range xsd:dateTime .
+
+
+###  http://example.com/ontologies/cabBooking#estimatedTime
+
+:estimatedTime rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Reservation ;
+                
+                rdfs:range xsd:float .
+
+
+###  http://example.com/ontologies/cabBooking#licenseNumber
+
+:licenseNumber rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Driver ;
+               
+               rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#paymentMethod
+
+:paymentMethod rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Passenger ;
+               
+               rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#pickupTime
+
+:pickupTime rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Reservation ;
+             
+             rdfs:range xsd:dateTime .
+
+
+###  http://example.com/ontologies/cabBooking#rating
+
+:rating rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :Driver ;
+        
+        rdfs:range xsd:float .
+
+
+###  http://example.com/ontologies/cabBooking#ratings
+
+:ratings rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Reservation ;
+         
+         rdfs:range xsd:float .
+
+
+###  http://example.com/ontologies/cabBooking#recommendationReason
+
+:recommendationReason rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:domain :Recommendation ;
+                      
+                      rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#registrationNumber
+
+:registrationNumber rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:domain :Cab ;
+                     
+                     rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#reservationID
+
+:reservationID rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Reservation ;
+                
+                rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#reservationStatus
+
+:reservationStatus rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:domain :Reservation ;
+                    
+                    rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#reservationTime
+
+:reservationTime rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:domain :Reservation ;
+                  
+                  rdfs:range xsd:dateTime .
+
+
+###  http://example.com/ontologies/cabBooking#specialRequest
+
+:specialRequest rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :Reservation ;
+                 
+                 rdfs:range xsd:string .
+
+
+###  http://example.com/ontologies/cabBooking#time
+
+:time rdf:type owl:DatatypeProperty ;
+      
+      rdfs:domain :EstimatedTime ;
+      
+      rdfs:range xsd:dateTime .
+
+
+###  http://example.com/ontologies/cabBooking#totalFare
+
+:totalFare rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Reservation ;
+           
+           rdfs:range xsd:float .
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://example.com/ontologies/cabBooking#Address
+
+:Address rdf:type owl:Class ;
+         rdfs:subClassOf :Location .
+
+
+
+###  http://example.com/ontologies/cabBooking#BookingStatus
+
+:BookingStatus rdf:type owl:Class ;
+               rdfs:subClassOf :CabBooking .
+
+
+
+###  http://example.com/ontologies/cabBooking#Cab
+
+:Cab rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#CabBooking
+
+:CabBooking rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#CabType
+
+:CabType rdf:type owl:Class ;
+         rdfs:subClassOf :Cab .
+
+
+
+###  http://example.com/ontologies/cabBooking#ContactDetails
+
+:ContactDetails rdf:type owl:Class ;
+                rdfs:subClassOf :Passenger .
+
+
+
+###  http://example.com/ontologies/cabBooking#Coordinates
+
+:Coordinates rdf:type owl:Class ;
+             rdfs:subClassOf :Location .
+
+
+
+###  http://example.com/ontologies/cabBooking#Distance
+
+:Distance rdf:type owl:Class ;
+          rdfs:subClassOf :Route .
+
+
+
+###  http://example.com/ontologies/cabBooking#EndLocation
+
+:EndLocation rdf:type owl:Class ;
+             rdfs:subClassOf :Route .
+
+
+
+###  http://example.com/ontologies/cabBooking#EstimatedTime
+
+:EstimatedTime rdf:type owl:Class ;
+               rdfs:subClassOf :Route .
+
+
+
+###  http://example.com/ontologies/cabBooking#LocationID
+
+:LocationID rdf:type owl:Class ;
+            rdfs:subClassOf :Location .
+
+
+
+###  http://example.com/ontologies/cabBooking#Location
+
+:Location rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#Name
+
+:Name rdf:type owl:Class ;
+      rdfs:subClassOf :Driver .
+
+
+
+###  http://example.com/ontologies/cabBooking#PaymentMethod
+
+:PaymentMethod rdf:type owl:Class ;
+               rdfs:subClassOf :Passenger .
+
+
+
+###  http://example.com/ontologies/cabBooking#Recommendation
+
+:Recommendation rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#Reservation
+
+:Reservation rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#ReservationTime
+
+:ReservationTime rdf:type owl:Class ;
+                 rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#Route
+
+:Route rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#StartLocation
+
+:StartLocation rdf:type owl:Class ;
+               rdfs:subClassOf :Route .
+
+
+
+###  http://example.com/ontologies/cabBooking#CabID
+
+:CabID rdf:type owl:Class ;
+       rdfs:subClassOf :Cab .
+
+
+
+###  http://example.com/ontologies/cabBooking#CabStatus
+
+:CabStatus rdf:type owl:Class ;
+           rdfs:subClassOf :Cab .
+
+
+
+###  http://example.com/ontologies/cabBooking#Capacity
+
+:Capacity rdf:type owl:Class ;
+          rdfs:subClassOf :Cab .
+
+
+
+###  http://example.com/ontologies/cabBooking#ContactDetails
+
+:ContactDetails rdf:type owl:Class ;
+                rdfs:subClassOf :Driver .
+
+
+
+###  http://example.com/ontologies/cabBooking#Distance
+
+:Distance rdf:type owl:Class ;
+          rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#Driver
+
+:Driver rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#DriverID
+
+:DriverID rdf:type owl:Class ;
+          rdfs:subClassOf :Driver .
+
+
+
+###  http://example.com/ontologies/cabBooking#DropoffTime
+
+:DropoffTime rdf:type owl:Class ;
+             rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#EndLocation
+
+:EndLocation rdf:type owl:Class ;
+             rdfs:subClassOf :Location .
+
+
+
+###  http://example.com/ontologies/cabBooking#EstimatedTime
+
+:EstimatedTime rdf:type owl:Class ;
+               rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#LicenseNumber
+
+:LicenseNumber rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+
+###  http://example.com/ontologies/cabBooking#Name
+
+:Name rdf:type owl:Class ;
+      rdfs:subClassOf :Passenger .
+
+
+
+###  http://example.com/ontologies/cabBooking#Passenger
+
+:Passenger rdf:type owl:Class .
+
+
+
+###  http://example.com/ontologies/cabBooking#PassengerID
+
+:PassengerID rdf:type owl:Class ;
+             rdfs:subClassOf :Passenger .
+
+
+
+###  http://example.com/ontologies/cabBooking#PaymentMethod
+
+:PaymentMethod rdf:type owl:Class ;
+               rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#PickupTime
+
+:PickupTime rdf:type owl:Class ;
+            rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#Ratings
+
+:Ratings rdf:type owl:Class ;
+         rdfs:subClassOf :Driver .
+
+
+
+###  http://example.com/ontologies/cabBooking#RecommendedCab
+
+:RecommendedCab rdf:type owl:Class ;
+                rdfs:subClassOf :Recommendation .
+
+
+
+###  http://example.com/ontologies/cabBooking#RecommendedDriver
+
+:RecommendedDriver rdf:type owl:Class ;
+                   rdfs:subClassOf :Recommendation .
+
+
+
+###  http://example.com/ontologies/cabBooking#RecommendedRoute
+
+:RecommendedRoute rdf:type owl:Class ;
+                  rdfs:subClassOf :Recommendation .
+
+
+
+###  http://example.com/ontologies/cabBooking#RegistrationNumber
+
+:RegistrationNumber rdf:type owl:Class ;
+                    rdfs:subClassOf :Cab .
+
+
+
+###  http://example.com/ontologies/cabBooking#ReservationStatus
+
+:ReservationStatus rdf:type owl:Class ;
+                   rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#ReservationID
+
+:ReservationID rdf:type owl:Class ;
+               rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#RouteID
+
+:RouteID rdf:type owl:Class ;
+         rdfs:subClassOf :Route .
+
+
+
+###  http://example.com/ontologies/cabBooking#SpecialRequest
+
+:SpecialRequest rdf:type owl:Class ;
+                rdfs:subClassOf :Reservation .
+
+
+
+###  http://example.com/ontologies/cabBooking#StartLocation
+
+:StartLocation rdf:type owl:Class ;
+               rdfs:subClassOf :Location .
+
+
+
+###  http://example.com/ontologies/cabBooking#TotalFare
+
+:TotalFare rdf:type owl:Class ;
+           rdfs:subClassOf :Reservation .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+### http://example.com/ontologies/cabBooking#1.5hour
+<http://example.com/ontologies/cabBooking#1.5hour> rdf:type owl:NamedIndividual ;
+                                                   :estimated_time "1.5hour"^^xsd:string ;
+                                                   :hasEstimatedTime <http://example.com/ontologies/cabBooking#1.5hour> .
+
+### http://example.com/ontologies/cabBooking#15km
+<http://example.com/ontologies/cabBooking#15km> rdf:type owl:NamedIndividual ;
+                                                :distance "15km"^^xsd:string ;
+                                                :hasDistance <http://example.com/ontologies/cabBooking#15km> .
+
+### http://example.com/ontologies/cabBooking#1hour
+<http://example.com/ontologies/cabBooking#1hour> rdf:type owl:NamedIndividual ;
+                                                 :time "1hour"^^xsd:string ;
+                                                 :hasEstimatedTime <http://example.com/ontologies/cabBooking#1hour> .
+
+### http://example.com/ontologies/cabBooking#4
+<http://example.com/ontologies/cabBooking#4> rdf:type owl:NamedIndividual ;
+                                             :capacity "4"^^xsd:string ;
+                                             :hasCab <http://example.com/ontologies/cabBooking#4> .
+
+### http://example.com/ontologies/cabBooking#4.2
+<http://example.com/ontologies/cabBooking#4.2> rdf:type owl:NamedIndividual ;
+                                               :ratings "4.2"^^xsd:string ;
+                                               :hasRating <http://example.com/ontologies/cabBooking#4.2> .
+
+### http://example.com/ontologies/cabBooking#565656
+<http://example.com/ontologies/cabBooking#565656> rdf:type owl:NamedIndividual ;
+                                                  :licenseNumber "565656"^^xsd:string ;
+                                                  :hasLicenseNo <http://example.com/ontologies/cabBooking#565656> .
+
+### http://example.com/ontologies/cabBooking#6AM
+<http://example.com/ontologies/cabBooking#6AM> rdf:type owl:NamedIndividual ;
+                                               :reservation_time "6AM"^^xsd:string ;
+                                               :hasReservationTime <http://example.com/ontologies/cabBooking#6AM> .
+
+### http://example.com/ontologies/cabBooking#7AM
+<http://example.com/ontologies/cabBooking#7AM> rdf:type owl:NamedIndividual ;
+                                               :pickup_time "7AM"^^xsd:string ;
+                                               :hasPickupTime <http://example.com/ontologies/cabBooking#7AM> .
+
+### http://example.com/ontologies/cabBooking#800
+<http://example.com/ontologies/cabBooking#800> rdf:type owl:NamedIndividual ;
+                                               :total_fare "800"^^xsd:string ;
+                                               :hasFare <http://example.com/ontologies/cabBooking#800> .
+
+### http://example.com/ontologies/cabBooking#8AM
+<http://example.com/ontologies/cabBooking#8AM> rdf:type owl:NamedIndividual ;
+                                               :dropoff_time "8AM"^^xsd:string ;
+                                               :hasDropoffTime <http://example.com/ontologies/cabBooking#8AM> .
+
+### http://example.com/ontologies/cabBooking#D456
+<http://example.com/ontologies/cabBooking#D456> rdf:type owl:NamedIndividual ;
+                                               :driverID "D456"^^xsd:string ;
+                                               :hasDriver <http://example.com/ontologies/cabBooking#D456> .
+
+### http://example.com/ontologies/cabBooking#Lend
+<http://example.com/ontologies/cabBooking#Lend> rdf:type owl:NamedIndividual ;
+                                               :hasEndLocation "tomsville"^^xsd:string ;
+                                               :hasEndLocation :Lend .
+
+### http://example.com/ontologies/cabBooking#Lstart
+<http://example.com/ontologies/cabBooking#Lstart> rdf:type owl:NamedIndividual ;
+                                                 :hasStartLocation "villy"^^xsd:string ;
+                                                 :hasStartLocation :Lstart .
+
+### http://example.com/ontologies/cabBooking#P123
+<http://example.com/ontologies/cabBooking#P123> rdf:type owl:NamedIndividual ;
+                                               :passengerID "P123"^^xsd:string ;
+                                               :hasPassenger <http://example.com/ontologies/cabBooking#P123> .
+
+### http://example.com/ontologies/cabBooking#R123
+<http://example.com/ontologies/cabBooking#R123> rdf:type owl:NamedIndividual ;
+                                               :reservation_id "R123"^^xsd:string ;
+                                               :hasReservation <http://example.com/ontologies/cabBooking#R123> .
+
+### http://example.com/ontologies/cabBooking#available
+<http://example.com/ontologies/cabBooking#available> rdf:type owl:NamedIndividual ;
+                                                      :cabStatus "available"^^xsd:string ;
+                                                      :hasCab :available .
+
+### http://example.com/ontologies/cabBooking#cab456
+<http://example.com/ontologies/cabBooking#cab456> rdf:type owl:NamedIndividual ;
+                                                  :cabID "cab456"^^xsd:string ;
+                                                  :hasCab :cab456 .
+
+### http://example.com/ontologies/cabBooking#childseat
+<http://example.com/ontologies/cabBooking#childseat> rdf:type owl:NamedIndividual ;
+                                                     :special_request "childseat"^^xsd:string ;
+                                                     :hasSpecialRequest :childseat .
+
+### http://example.com/ontologies/cabBooking#creditcard
+<http://example.com/ontologies/cabBooking#creditcard> rdf:type owl:NamedIndividual ;
+                                                      :paymentMethod "creditcard"^^xsd:string ;
+                                                      :hasPaymentMethod :creditcard .
+
+### http://example.com/ontologies/cabBooking#jame
+<http://example.com/ontologies/cabBooking#jame> rdf:type owl:NamedIndividual ;
+                                                :name "jame"^^xsd:string ;
+                                                :drivenBy :jame .
+
+### http://example.com/ontologies/cabBooking#jame@gmail.com
+<http://example.com/ontologies/cabBooking#jame@gmail.com> rdf:type owl:NamedIndividual ;
+                                                           :contactDetails "jame@gmail.com"^^xsd:string ;
+                                                           :hasDriver <http://example.com/ontologies/cabBooking#jame@gmail.com> .
+
+### http://example.com/ontologies/cabBooking#james
+<http://example.com/ontologies/cabBooking#james> rdf:type owl:NamedIndividual ;
+                                                 :recommendationReason "Good ratings"^^xsd:string ;
+                                                 :recommendsDriver :james .
