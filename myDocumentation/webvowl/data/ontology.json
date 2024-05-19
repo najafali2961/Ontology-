@@ -1,0 +1,1883 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://example.com/ontologies/cabBooking" ],
+    "iri" : "http://example.com/ontologies/cabBooking",
+    "comments" : { }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://example.com/ontologies/cabBooking#PaymentMethod",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaymentMethod"
+    },
+    "id" : "0",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Name",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Name"
+    },
+    "id" : "10",
+    "superClasses" : [ "1", "4" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#PassengerID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassengerID"
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#EndLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EndLocation"
+    },
+    "id" : "14",
+    "superClasses" : [ "15", "8" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Ratings",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ratings"
+    },
+    "id" : "18",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#DropoffTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DropoffTime"
+    },
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#ReservationID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReservationID"
+    },
+    "id" : "23",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#TotalFare",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TotalFare"
+    },
+    "id" : "26",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#CabBooking",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabBooking"
+    },
+    "subClasses" : [ "32" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Location",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "subClasses" : [ "14", "33", "34", "35", "36" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Cab",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cab"
+    },
+    "subClasses" : [ "42", "43", "44", "45", "46" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Passenger",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger"
+    },
+    "subClasses" : [ "0", "10", "11", "47" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#LicenseNumber",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LicenseNumber"
+    },
+    "id" : "48",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#SpecialRequest",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecialRequest"
+    },
+    "id" : "54",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#StartLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StartLocation"
+    },
+    "id" : "34",
+    "superClasses" : [ "15", "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#RecommendedRoute",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedRoute"
+    },
+    "id" : "75",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#CabType",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabType"
+    },
+    "id" : "42",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#RegistrationNumber",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistrationNumber"
+    },
+    "id" : "44",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#CabStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabStatus"
+    },
+    "id" : "46",
+    "superClasses" : [ "41" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "40",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#ContactDetails",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContactDetails"
+    },
+    "id" : "47",
+    "superClasses" : [ "1", "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "56", "57" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "101",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Distance",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Distance"
+    },
+    "id" : "102",
+    "superClasses" : [ "2", "8" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Capacity",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Capacity"
+    },
+    "id" : "43",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Address",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "id" : "35",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#LocationID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocationID"
+    },
+    "id" : "33",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#RecommendedDriver",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedDriver"
+    },
+    "id" : "108",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#ReservationTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReservationTime"
+    },
+    "id" : "136",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#DriverID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DriverID"
+    },
+    "id" : "141",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#CabID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabID"
+    },
+    "id" : "45",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Driver",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Driver"
+    },
+    "subClasses" : [ "48", "18", "10", "141", "47" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "157",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#ReservationStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReservationStatus"
+    },
+    "id" : "143",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#RecommendedCab",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedCab"
+    },
+    "id" : "105",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#EstimatedTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EstimatedTime"
+    },
+    "id" : "17",
+    "superClasses" : [ "2", "8" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Reservation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reservation"
+    },
+    "subClasses" : [ "102", "0", "143", "136", "54", "20", "17", "23", "26", "126" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Route",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Route"
+    },
+    "subClasses" : [ "102", "14", "17", "34", "111" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#BookingStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BookingStatus"
+    },
+    "id" : "32",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Recommendation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommendation"
+    },
+    "subClasses" : [ "105", "75", "108" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#Coordinates",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coordinates"
+    },
+    "id" : "36",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#RouteID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RouteID"
+    },
+    "id" : "111",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#PickupTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PickupTime"
+    },
+    "id" : "126",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.com/ontologies/cabBooking#rating",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "rating"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#routeID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "routeID"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#specialRequest",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "specialRequest"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#time",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "time"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#locationID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "locationID"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#coordinates",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "coordinates"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasSpecialRequest",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasSpecialRequest"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#reservationStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "reservationStatus"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#address",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "address"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasDropoffLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasDropoffLocation"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "range" : "1",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "4",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasLicenseNo",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasLicenseNo"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#isBookedBy",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "isBookedBy"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#distance",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "distance"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasDriver",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDriver"
+    },
+    "domain" : "41",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#cabID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "cabID"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "41",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#reservationID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "reservationID"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#registrationNumber",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "registrationNumber"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "range" : "41",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "41",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "41",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "41",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "15",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "15",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasFare",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasFare"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasPickupLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasPickupLocation"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasStartLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasStartLocation"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "range" : "15",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasEstimatedTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasEstimatedTime"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#bookingStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "bookingStatus"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasEndLocation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasEndLocation"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "range" : "31",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasReservationTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasReservationTime"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "range" : "76",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "76",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#passengerID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "passengerID"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "range" : "76",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#recommendationReason",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "recommendationReason"
+    },
+    "domain" : "76",
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "range" : "8",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasReservation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasReservation"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#totalFare",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "totalFare"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#recommendsCab",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "recommendsCab"
+    },
+    "domain" : "76",
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#bookingID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "bookingID"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "range" : "8",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "8",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#estimatedTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "estimatedTime"
+    },
+    "domain" : "95",
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasRoute",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasRoute"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#cabType",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "cabType"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#contactDetails",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "contactDetails"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "range" : "2",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "2",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasPickupTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasPickupTime"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "range" : "8",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "8",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasDistance",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasDistance"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "2",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#driverID",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "driverID"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#recommendsRoute",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "recommendsRoute"
+    },
+    "domain" : "76",
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#licenseNumber",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "licenseNumber"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#recommendsDriver",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "recommendsDriver"
+    },
+    "domain" : "76",
+    "attributes" : [ "object" ],
+    "id" : "140"
+  }, {
+    "range" : "2",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasPassenger",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPassenger"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "145"
+  }, {
+    "range" : "2",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#ratings",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "ratings"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "range" : "4",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#reservationTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "reservationTime"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "range" : "2",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#capacity",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "154",
+    "label" : {
+      "IRI-based" : "capacity"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasCab",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasCab"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#travelThrough",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "travelThrough"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#paymentMethod",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "paymentMethod"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasDropoffTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasDropoffTime"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#name",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#drivenBy",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "drivenBy"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#cabStatus",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "cabStatus"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasPaymentMethod",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasPaymentMethod"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#dropoffTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "dropoffTime"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#bookingTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "bookingTime"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasRecommendation",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasRecommendation"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#pickupTime",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "pickupTime"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://example.com/ontologies/cabBooking#hasRating",
+    "baseIri" : "http://example.com/ontologies/cabBooking",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "169"
+  } ]
+}

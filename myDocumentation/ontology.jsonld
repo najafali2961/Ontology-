@@ -1,0 +1,875 @@
+[ {
+  "@id" : "http://example.com/ontologies/cabBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking/2024-05-14"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#1.5hour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#estimated_time" : [ {
+    "@value" : "1.5hour"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasEstimatedTime" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#1.5hour"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#15km",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#distance" : [ {
+    "@value" : "15km"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasDistance" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#15km"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#1hour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasEstimatedTime" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#1hour"
+  } ],
+  "http://example.com/ontologies/cabBooking#time" : [ {
+    "@value" : "1hour"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#capacity" : [ {
+    "@value" : "4"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasCab" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#4"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#4.2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasRating" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#4.2"
+  } ],
+  "http://example.com/ontologies/cabBooking#ratings" : [ {
+    "@value" : "4.2"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#565656",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasLicenseNo" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#565656"
+  } ],
+  "http://example.com/ontologies/cabBooking#licenseNumber" : [ {
+    "@value" : "565656"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#6AM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasReservationTime" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#6AM"
+  } ],
+  "http://example.com/ontologies/cabBooking#reservation_time" : [ {
+    "@value" : "6AM"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#7AM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasPickupTime" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#7AM"
+  } ],
+  "http://example.com/ontologies/cabBooking#pickup_time" : [ {
+    "@value" : "7AM"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasFare" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#800"
+  } ],
+  "http://example.com/ontologies/cabBooking#total_fare" : [ {
+    "@value" : "800"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#8AM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#dropoff_time" : [ {
+    "@value" : "8AM"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasDropoffTime" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#8AM"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#BookingStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Cab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#CabBooking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#CabID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#CabStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#CabType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Capacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#ContactDetails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Coordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#D456",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#driverID" : [ {
+    "@value" : "D456"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasDriver" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#D456"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Driver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#DriverID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#DropoffTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#EndLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#EstimatedTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Lend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasEndLocation" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Lend"
+  }, {
+    "@value" : "tomsville"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#LicenseNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#LocationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Lstart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasStartLocation" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Lstart"
+  }, {
+    "@value" : "villy"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#P123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasPassenger" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#P123"
+  } ],
+  "http://example.com/ontologies/cabBooking#passengerID" : [ {
+    "@value" : "P123"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#PassengerID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#PaymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#PickupTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#R123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasReservation" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#R123"
+  } ],
+  "http://example.com/ontologies/cabBooking#reservation_id" : [ {
+    "@value" : "R123"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Ratings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Recommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#RecommendedCab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#RecommendedDriver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#RecommendedRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#RegistrationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Reservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#ReservationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#ReservationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#ReservationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#RouteID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#SpecialRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#StartLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#TotalFare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#available",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#cabStatus" : [ {
+    "@value" : "available"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasCab" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#available"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#bookingID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#bookingStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#bookingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#cab456",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#cabID" : [ {
+    "@value" : "cab456"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasCab" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#cab456"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#cabID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#cabStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#cabType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#capacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#childseat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasSpecialRequest" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#childseat"
+  } ],
+  "http://example.com/ontologies/cabBooking#special_request" : [ {
+    "@value" : "childseat"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#contactDetails",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#coordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#creditcard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#hasPaymentMethod" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#creditcard"
+  } ],
+  "http://example.com/ontologies/cabBooking#paymentMethod" : [ {
+    "@value" : "creditcard"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#drivenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#driverID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#dropoffTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#dropoff_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#estimatedTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  }, {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#estimated_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasCab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasDriver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasDropoffLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasDropoffTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasEndLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasEstimatedTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasFare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasLicenseNo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#CabBooking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasPaymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#PaymentMethod"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasPickupLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasPickupTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasRecommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasReservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasReservationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasSpecialRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#hasStartLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#isBookedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#jame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#drivenBy" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#jame"
+  } ],
+  "http://example.com/ontologies/cabBooking#name" : [ {
+    "@value" : "jame"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#jame@gmail.com",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#contactDetails" : [ {
+    "@value" : "jame@gmail.com"
+  } ],
+  "http://example.com/ontologies/cabBooking#hasDriver" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#jame@gmail.com"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#james",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.com/ontologies/cabBooking#recommendationReason" : [ {
+    "@value" : "Good ratings"
+  } ],
+  "http://example.com/ontologies/cabBooking#recommendsDriver" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#james"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#licenseNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#locationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#passengerID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#paymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#pickupTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#pickup_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Driver"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#ratings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#recommendationReason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#recommendsCab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#recommendsDriver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#recommendsRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Recommendation"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#registrationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Cab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#reservationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#reservationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#reservationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#reservation_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#reservation_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#routeID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#specialRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#special_request",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#EstimatedTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#totalFare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.com/ontologies/cabBooking#Reservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#total_fare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.com/ontologies/cabBooking#travelThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

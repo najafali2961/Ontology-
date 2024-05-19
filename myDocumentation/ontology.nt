@@ -1,0 +1,591 @@
+<http://example.com/ontologies/cabBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://example.com/ontologies/cabBooking> <http://www.w3.org/2002/07/owl#versionIRI> <http://example.com/ontologies/cabBooking/2024-05-14> .
+<http://example.com/ontologies/cabBooking> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontologies/cabBooking#dropoff_time
+<http://example.com/ontologies/cabBooking#dropoff_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#estimated_time
+<http://example.com/ontologies/cabBooking#estimated_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#pickup_time
+<http://example.com/ontologies/cabBooking#pickup_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#reservation_id
+<http://example.com/ontologies/cabBooking#reservation_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#reservation_time
+<http://example.com/ontologies/cabBooking#reservation_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#special_request
+<http://example.com/ontologies/cabBooking#special_request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.com/ontologies/cabBooking#total_fare
+<http://example.com/ontologies/cabBooking#total_fare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontologies/cabBooking#drivenBy
+<http://example.com/ontologies/cabBooking#drivenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasCab
+<http://example.com/ontologies/cabBooking#hasCab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasCab> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#CabBooking> .
+<http://example.com/ontologies/cabBooking#hasCab> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#hasDistance
+<http://example.com/ontologies/cabBooking#hasDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasDriver
+<http://example.com/ontologies/cabBooking#hasDriver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasDriver> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#hasDriver> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Driver> .
+# 
+# http://example.com/ontologies/cabBooking#hasDropoffLocation
+<http://example.com/ontologies/cabBooking#hasDropoffLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasDropoffLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#hasDropoffLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#hasDropoffTime
+<http://example.com/ontologies/cabBooking#hasDropoffTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasEndLocation
+<http://example.com/ontologies/cabBooking#hasEndLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasEndLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Route> .
+<http://example.com/ontologies/cabBooking#hasEndLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#hasEstimatedTime
+<http://example.com/ontologies/cabBooking#hasEstimatedTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasFare
+<http://example.com/ontologies/cabBooking#hasFare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasLicenseNo
+<http://example.com/ontologies/cabBooking#hasLicenseNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasPassenger
+<http://example.com/ontologies/cabBooking#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#CabBooking> .
+<http://example.com/ontologies/cabBooking#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Passenger> .
+# 
+# http://example.com/ontologies/cabBooking#hasPaymentMethod
+<http://example.com/ontologies/cabBooking#hasPaymentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasPaymentMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#hasPaymentMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#PaymentMethod> .
+# 
+# http://example.com/ontologies/cabBooking#hasPickupLocation
+<http://example.com/ontologies/cabBooking#hasPickupLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasPickupLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#hasPickupLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#hasPickupTime
+<http://example.com/ontologies/cabBooking#hasPickupTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasRating
+<http://example.com/ontologies/cabBooking#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasRecommendation
+<http://example.com/ontologies/cabBooking#hasRecommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#hasRecommendation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#hasReservation
+<http://example.com/ontologies/cabBooking#hasReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasReservationTime
+<http://example.com/ontologies/cabBooking#hasReservationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasRoute
+<http://example.com/ontologies/cabBooking#hasRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasSpecialRequest
+<http://example.com/ontologies/cabBooking#hasSpecialRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#hasStartLocation
+<http://example.com/ontologies/cabBooking#hasStartLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#hasStartLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Route> .
+<http://example.com/ontologies/cabBooking#hasStartLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#isBookedBy
+<http://example.com/ontologies/cabBooking#isBookedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://example.com/ontologies/cabBooking#recommendsCab
+<http://example.com/ontologies/cabBooking#recommendsCab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#recommendsCab> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#recommendsDriver
+<http://example.com/ontologies/cabBooking#recommendsDriver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#recommendsDriver> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#recommendsRoute
+<http://example.com/ontologies/cabBooking#recommendsRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.com/ontologies/cabBooking#recommendsRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#travelThrough
+<http://example.com/ontologies/cabBooking#travelThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontologies/cabBooking#address
+<http://example.com/ontologies/cabBooking#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Location> .
+<http://example.com/ontologies/cabBooking#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#bookingID
+<http://example.com/ontologies/cabBooking#bookingID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#bookingID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#CabBooking> .
+<http://example.com/ontologies/cabBooking#bookingID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#bookingStatus
+<http://example.com/ontologies/cabBooking#bookingStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#bookingStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#CabBooking> .
+<http://example.com/ontologies/cabBooking#bookingStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#bookingTime
+<http://example.com/ontologies/cabBooking#bookingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#bookingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#CabBooking> .
+<http://example.com/ontologies/cabBooking#bookingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://example.com/ontologies/cabBooking#cabID
+<http://example.com/ontologies/cabBooking#cabID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#cabID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#cabID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#cabStatus
+<http://example.com/ontologies/cabBooking#cabStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#cabStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#cabStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#cabType
+<http://example.com/ontologies/cabBooking#cabType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#cabType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#cabType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#capacity
+<http://example.com/ontologies/cabBooking#capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#capacity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#capacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#contactDetails
+<http://example.com/ontologies/cabBooking#contactDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#contactDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#contactDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#coordinates
+<http://example.com/ontologies/cabBooking#coordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#coordinates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Location> .
+<http://example.com/ontologies/cabBooking#coordinates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#distance
+<http://example.com/ontologies/cabBooking#distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#distance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Route> .
+<http://example.com/ontologies/cabBooking#distance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://example.com/ontologies/cabBooking#driverID
+<http://example.com/ontologies/cabBooking#driverID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#driverID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Driver> .
+<http://example.com/ontologies/cabBooking#driverID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#dropoffTime
+<http://example.com/ontologies/cabBooking#dropoffTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#dropoffTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#dropoffTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://example.com/ontologies/cabBooking#estimatedTime
+<http://example.com/ontologies/cabBooking#estimatedTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#estimatedTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#estimatedTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Route> .
+<http://example.com/ontologies/cabBooking#estimatedTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/ontologies/cabBooking#estimatedTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#licenseNumber
+<http://example.com/ontologies/cabBooking#licenseNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#licenseNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Driver> .
+<http://example.com/ontologies/cabBooking#licenseNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#locationID
+<http://example.com/ontologies/cabBooking#locationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#locationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Location> .
+<http://example.com/ontologies/cabBooking#locationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#name
+<http://example.com/ontologies/cabBooking#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#passengerID
+<http://example.com/ontologies/cabBooking#passengerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#passengerID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#passengerID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#paymentMethod
+<http://example.com/ontologies/cabBooking#paymentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#paymentMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#paymentMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#pickupTime
+<http://example.com/ontologies/cabBooking#pickupTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#pickupTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#pickupTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://example.com/ontologies/cabBooking#rating
+<http://example.com/ontologies/cabBooking#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Driver> .
+<http://example.com/ontologies/cabBooking#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://example.com/ontologies/cabBooking#ratings
+<http://example.com/ontologies/cabBooking#ratings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#ratings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#ratings> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://example.com/ontologies/cabBooking#recommendationReason
+<http://example.com/ontologies/cabBooking#recommendationReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#recommendationReason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Recommendation> .
+<http://example.com/ontologies/cabBooking#recommendationReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#registrationNumber
+<http://example.com/ontologies/cabBooking#registrationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#registrationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Cab> .
+<http://example.com/ontologies/cabBooking#registrationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#reservationID
+<http://example.com/ontologies/cabBooking#reservationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#reservationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#reservationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#reservationStatus
+<http://example.com/ontologies/cabBooking#reservationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#reservationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#reservationStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#reservationTime
+<http://example.com/ontologies/cabBooking#reservationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#reservationTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#reservationTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://example.com/ontologies/cabBooking#routeID
+<http://example.com/ontologies/cabBooking#routeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#routeID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Route> .
+<http://example.com/ontologies/cabBooking#routeID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#specialRequest
+<http://example.com/ontologies/cabBooking#specialRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#specialRequest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#specialRequest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.com/ontologies/cabBooking#time
+<http://example.com/ontologies/cabBooking#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#time> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#EstimatedTime> .
+<http://example.com/ontologies/cabBooking#time> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://example.com/ontologies/cabBooking#totalFare
+<http://example.com/ontologies/cabBooking#totalFare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.com/ontologies/cabBooking#totalFare> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#totalFare> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontologies/cabBooking#Address
+<http://example.com/ontologies/cabBooking#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#BookingStatus
+<http://example.com/ontologies/cabBooking#BookingStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#BookingStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#CabBooking> .
+# 
+# http://example.com/ontologies/cabBooking#Cab
+<http://example.com/ontologies/cabBooking#Cab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#CabBooking
+<http://example.com/ontologies/cabBooking#CabBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#CabID
+<http://example.com/ontologies/cabBooking#CabID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#CabID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#CabStatus
+<http://example.com/ontologies/cabBooking#CabStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#CabStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#CabType
+<http://example.com/ontologies/cabBooking#CabType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#CabType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#Capacity
+<http://example.com/ontologies/cabBooking#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Capacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#ContactDetails
+<http://example.com/ontologies/cabBooking#ContactDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Driver> .
+<http://example.com/ontologies/cabBooking#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Passenger> .
+# 
+# http://example.com/ontologies/cabBooking#Coordinates
+<http://example.com/ontologies/cabBooking#Coordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Coordinates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#Distance
+<http://example.com/ontologies/cabBooking#Distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Distance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#Distance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Route> .
+# 
+# http://example.com/ontologies/cabBooking#Driver
+<http://example.com/ontologies/cabBooking#Driver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#DriverID
+<http://example.com/ontologies/cabBooking#DriverID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#DriverID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Driver> .
+# 
+# http://example.com/ontologies/cabBooking#DropoffTime
+<http://example.com/ontologies/cabBooking#DropoffTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#DropoffTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#EndLocation
+<http://example.com/ontologies/cabBooking#EndLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#EndLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Location> .
+<http://example.com/ontologies/cabBooking#EndLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Route> .
+# 
+# http://example.com/ontologies/cabBooking#EstimatedTime
+<http://example.com/ontologies/cabBooking#EstimatedTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#EstimatedTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+<http://example.com/ontologies/cabBooking#EstimatedTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Route> .
+# 
+# http://example.com/ontologies/cabBooking#LicenseNumber
+<http://example.com/ontologies/cabBooking#LicenseNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#LicenseNumber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Driver> .
+# 
+# http://example.com/ontologies/cabBooking#Location
+<http://example.com/ontologies/cabBooking#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#LocationID
+<http://example.com/ontologies/cabBooking#LocationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#LocationID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Location> .
+# 
+# http://example.com/ontologies/cabBooking#Name
+<http://example.com/ontologies/cabBooking#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Name> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Driver> .
+<http://example.com/ontologies/cabBooking#Name> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Passenger> .
+# 
+# http://example.com/ontologies/cabBooking#Passenger
+<http://example.com/ontologies/cabBooking#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#PassengerID
+<http://example.com/ontologies/cabBooking#PassengerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#PassengerID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Passenger> .
+# 
+# http://example.com/ontologies/cabBooking#PaymentMethod
+<http://example.com/ontologies/cabBooking#PaymentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#PaymentMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Passenger> .
+<http://example.com/ontologies/cabBooking#PaymentMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#PickupTime
+<http://example.com/ontologies/cabBooking#PickupTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#PickupTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#Ratings
+<http://example.com/ontologies/cabBooking#Ratings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#Ratings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Driver> .
+# 
+# http://example.com/ontologies/cabBooking#Recommendation
+<http://example.com/ontologies/cabBooking#Recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#RecommendedCab
+<http://example.com/ontologies/cabBooking#RecommendedCab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#RecommendedCab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#RecommendedDriver
+<http://example.com/ontologies/cabBooking#RecommendedDriver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#RecommendedDriver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#RecommendedRoute
+<http://example.com/ontologies/cabBooking#RecommendedRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#RecommendedRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Recommendation> .
+# 
+# http://example.com/ontologies/cabBooking#RegistrationNumber
+<http://example.com/ontologies/cabBooking#RegistrationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#RegistrationNumber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Cab> .
+# 
+# http://example.com/ontologies/cabBooking#Reservation
+<http://example.com/ontologies/cabBooking#Reservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#ReservationID
+<http://example.com/ontologies/cabBooking#ReservationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#ReservationID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#ReservationStatus
+<http://example.com/ontologies/cabBooking#ReservationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#ReservationStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#ReservationTime
+<http://example.com/ontologies/cabBooking#ReservationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#ReservationTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#Route
+<http://example.com/ontologies/cabBooking#Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://example.com/ontologies/cabBooking#RouteID
+<http://example.com/ontologies/cabBooking#RouteID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#RouteID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Route> .
+# 
+# http://example.com/ontologies/cabBooking#SpecialRequest
+<http://example.com/ontologies/cabBooking#SpecialRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#SpecialRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# http://example.com/ontologies/cabBooking#StartLocation
+<http://example.com/ontologies/cabBooking#StartLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#StartLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Location> .
+<http://example.com/ontologies/cabBooking#StartLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Route> .
+# 
+# http://example.com/ontologies/cabBooking#TotalFare
+<http://example.com/ontologies/cabBooking#TotalFare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.com/ontologies/cabBooking#TotalFare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.com/ontologies/cabBooking#Reservation> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://example.com/ontologies/cabBooking#D456
+<http://example.com/ontologies/cabBooking#D456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#D456> <http://example.com/ontologies/cabBooking#hasDriver> <http://example.com/ontologies/cabBooking#D456> .
+<http://example.com/ontologies/cabBooking#D456> <http://example.com/ontologies/cabBooking#driverID> "D456" .
+# 
+# http://example.com/ontologies/cabBooking#Lend
+<http://example.com/ontologies/cabBooking#Lend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#Lend> <http://example.com/ontologies/cabBooking#hasEndLocation> <http://example.com/ontologies/cabBooking#Lend> .
+<http://example.com/ontologies/cabBooking#Lend> <http://example.com/ontologies/cabBooking#hasEndLocation> "tomsville" .
+# 
+# http://example.com/ontologies/cabBooking#Lstart
+<http://example.com/ontologies/cabBooking#Lstart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#Lstart> <http://example.com/ontologies/cabBooking#hasStartLocation> <http://example.com/ontologies/cabBooking#Lstart> .
+<http://example.com/ontologies/cabBooking#Lstart> <http://example.com/ontologies/cabBooking#hasStartLocation> "villy" .
+# 
+# http://example.com/ontologies/cabBooking#P123
+<http://example.com/ontologies/cabBooking#P123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#P123> <http://example.com/ontologies/cabBooking#hasPassenger> <http://example.com/ontologies/cabBooking#P123> .
+<http://example.com/ontologies/cabBooking#P123> <http://example.com/ontologies/cabBooking#passengerID> "P123" .
+# 
+# http://example.com/ontologies/cabBooking#R123
+<http://example.com/ontologies/cabBooking#R123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#R123> <http://example.com/ontologies/cabBooking#hasReservation> <http://example.com/ontologies/cabBooking#R123> .
+<http://example.com/ontologies/cabBooking#R123> <http://example.com/ontologies/cabBooking#reservation_id> "R123" .
+# 
+# http://example.com/ontologies/cabBooking#available
+<http://example.com/ontologies/cabBooking#available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#available> <http://example.com/ontologies/cabBooking#hasCab> <http://example.com/ontologies/cabBooking#available> .
+<http://example.com/ontologies/cabBooking#available> <http://example.com/ontologies/cabBooking#cabStatus> "available" .
+# 
+# http://example.com/ontologies/cabBooking#cab456
+<http://example.com/ontologies/cabBooking#cab456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#cab456> <http://example.com/ontologies/cabBooking#hasCab> <http://example.com/ontologies/cabBooking#cab456> .
+<http://example.com/ontologies/cabBooking#cab456> <http://example.com/ontologies/cabBooking#cabID> "cab456" .
+# 
+# http://example.com/ontologies/cabBooking#childseat
+<http://example.com/ontologies/cabBooking#childseat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#childseat> <http://example.com/ontologies/cabBooking#hasSpecialRequest> <http://example.com/ontologies/cabBooking#childseat> .
+<http://example.com/ontologies/cabBooking#childseat> <http://example.com/ontologies/cabBooking#special_request> "childseat" .
+# 
+# http://example.com/ontologies/cabBooking#creditcard
+<http://example.com/ontologies/cabBooking#creditcard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#creditcard> <http://example.com/ontologies/cabBooking#hasPaymentMethod> <http://example.com/ontologies/cabBooking#creditcard> .
+<http://example.com/ontologies/cabBooking#creditcard> <http://example.com/ontologies/cabBooking#paymentMethod> "creditcard" .
+# 
+# http://example.com/ontologies/cabBooking#jame
+<http://example.com/ontologies/cabBooking#jame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#jame> <http://example.com/ontologies/cabBooking#drivenBy> <http://example.com/ontologies/cabBooking#jame> .
+<http://example.com/ontologies/cabBooking#jame> <http://example.com/ontologies/cabBooking#name> "jame" .
+# 
+# http://example.com/ontologies/cabBooking#james
+<http://example.com/ontologies/cabBooking#james> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#james> <http://example.com/ontologies/cabBooking#recommendsDriver> <http://example.com/ontologies/cabBooking#james> .
+<http://example.com/ontologies/cabBooking#james> <http://example.com/ontologies/cabBooking#recommendationReason> "Good ratings" .
+# 
+# http://example.com/ontologies/cabBooking#1hour
+<http://example.com/ontologies/cabBooking#1hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#1hour> <http://example.com/ontologies/cabBooking#hasEstimatedTime> <http://example.com/ontologies/cabBooking#1hour> .
+<http://example.com/ontologies/cabBooking#1hour> <http://example.com/ontologies/cabBooking#time> "1hour" .
+# 
+# http://example.com/ontologies/cabBooking#1.5hour
+<http://example.com/ontologies/cabBooking#1.5hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#1.5hour> <http://example.com/ontologies/cabBooking#hasEstimatedTime> <http://example.com/ontologies/cabBooking#1.5hour> .
+<http://example.com/ontologies/cabBooking#1.5hour> <http://example.com/ontologies/cabBooking#estimated_time> "1.5hour" .
+# 
+# http://example.com/ontologies/cabBooking#15km
+<http://example.com/ontologies/cabBooking#15km> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#15km> <http://example.com/ontologies/cabBooking#hasDistance> <http://example.com/ontologies/cabBooking#15km> .
+<http://example.com/ontologies/cabBooking#15km> <http://example.com/ontologies/cabBooking#distance> "15km" .
+# 
+# http://example.com/ontologies/cabBooking#4
+<http://example.com/ontologies/cabBooking#4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#4> <http://example.com/ontologies/cabBooking#hasCab> <http://example.com/ontologies/cabBooking#4> .
+<http://example.com/ontologies/cabBooking#4> <http://example.com/ontologies/cabBooking#capacity> "4" .
+# 
+# http://example.com/ontologies/cabBooking#4.2
+<http://example.com/ontologies/cabBooking#4.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#4.2> <http://example.com/ontologies/cabBooking#hasRating> <http://example.com/ontologies/cabBooking#4.2> .
+<http://example.com/ontologies/cabBooking#4.2> <http://example.com/ontologies/cabBooking#ratings> "4.2" .
+# 
+# http://example.com/ontologies/cabBooking#565656
+<http://example.com/ontologies/cabBooking#565656> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#565656> <http://example.com/ontologies/cabBooking#hasLicenseNo> <http://example.com/ontologies/cabBooking#565656> .
+<http://example.com/ontologies/cabBooking#565656> <http://example.com/ontologies/cabBooking#licenseNumber> "565656" .
+# 
+# http://example.com/ontologies/cabBooking#6AM
+<http://example.com/ontologies/cabBooking#6AM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#6AM> <http://example.com/ontologies/cabBooking#hasReservationTime> <http://example.com/ontologies/cabBooking#6AM> .
+<http://example.com/ontologies/cabBooking#6AM> <http://example.com/ontologies/cabBooking#reservation_time> "6AM" .
+# 
+# http://example.com/ontologies/cabBooking#7AM
+<http://example.com/ontologies/cabBooking#7AM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#7AM> <http://example.com/ontologies/cabBooking#hasPickupTime> <http://example.com/ontologies/cabBooking#7AM> .
+<http://example.com/ontologies/cabBooking#7AM> <http://example.com/ontologies/cabBooking#pickup_time> "7AM" .
+# 
+# http://example.com/ontologies/cabBooking#8AM
+<http://example.com/ontologies/cabBooking#8AM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#8AM> <http://example.com/ontologies/cabBooking#hasDropoffTime> <http://example.com/ontologies/cabBooking#8AM> .
+<http://example.com/ontologies/cabBooking#8AM> <http://example.com/ontologies/cabBooking#dropoff_time> "8AM" .
+# 
+# http://example.com/ontologies/cabBooking#800
+<http://example.com/ontologies/cabBooking#800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#800> <http://example.com/ontologies/cabBooking#hasFare> <http://example.com/ontologies/cabBooking#800> .
+<http://example.com/ontologies/cabBooking#800> <http://example.com/ontologies/cabBooking#total_fare> "800" .
+# 
+# http://example.com/ontologies/cabBooking#jame@gmail.com
+<http://example.com/ontologies/cabBooking#jame@gmail.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/ontologies/cabBooking#jame@gmail.com> <http://example.com/ontologies/cabBooking#hasDriver> <http://example.com/ontologies/cabBooking#jame@gmail.com> .
+<http://example.com/ontologies/cabBooking#jame@gmail.com> <http://example.com/ontologies/cabBooking#contactDetails> "jame@gmail.com" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
