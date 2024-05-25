@@ -1,0 +1,1086 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/ontologies/cabBooking#"
+     xml:base="http://example.com/ontologies/cabBooking"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.com/ontologies/cabBooking">
+        <owl:versionIRI rdf:resource="http://example.com/ontologies/cabBooking/2024-05-14"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#dropoff_time -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#dropoff_time"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#estimated_time -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#estimated_time"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#pickup_time -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#pickup_time"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#reservation_id -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#reservation_id"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#reservation_time -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#reservation_time"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#special_request -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#special_request"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#total_fare -->
+
+    <owl:AnnotationProperty rdf:about="http://example.com/ontologies/cabBooking#total_fare"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#drivenBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#drivenBy"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasCab -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasCab">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasDistance -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasDistance"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasDriver -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasDriver">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasDropoffLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasDropoffLocation">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasDropoffTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasDropoffTime"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasEndLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasEndLocation">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasEstimatedTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasEstimatedTime"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasFare -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasFare"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasLicenseNo -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasLicenseNo"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasPassenger -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasPassenger">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasPaymentMethod -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasPaymentMethod">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#PaymentMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasPickupLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasPickupLocation">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasPickupTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasPickupTime"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasRating"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasRecommendation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasRecommendation">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasReservation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasReservation"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasReservationTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasReservationTime"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasRoute -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasRoute"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasSpecialRequest -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasSpecialRequest"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#hasStartLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#hasStartLocation">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+        <rdfs:range rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#isBookedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#isBookedBy"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#recommendsCab -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#recommendsCab">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#recommendsDriver -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#recommendsDriver">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#recommendsRoute -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#recommendsRoute">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#travelThrough -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontologies/cabBooking#travelThrough"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#address -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#address">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#bookingID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#bookingID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#bookingStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#bookingStatus">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#bookingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#bookingTime">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#cabID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#cabID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#cabStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#cabStatus">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#cabType -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#cabType">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#capacity">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#contactDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#contactDetails">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#coordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#coordinates">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#distance -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#distance">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#driverID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#driverID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#dropoffTime -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#dropoffTime">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#estimatedTime -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#estimatedTime">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#licenseNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#licenseNumber">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#locationID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#locationID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#name -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#name">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#passengerID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#passengerID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#paymentMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#paymentMethod">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#pickupTime -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#pickupTime">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#rating">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#ratings -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#ratings">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#recommendationReason -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#recommendationReason">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#registrationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#registrationNumber">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#reservationID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#reservationID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#reservationStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#reservationStatus">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#reservationTime -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#reservationTime">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#routeID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#routeID">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#specialRequest -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#specialRequest">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#time -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#time">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#EstimatedTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#totalFare -->
+
+    <owl:DatatypeProperty rdf:about="http://example.com/ontologies/cabBooking#totalFare">
+        <rdfs:domain rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Address -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Address">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#BookingStatus -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#BookingStatus">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#CabBooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Cab -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Cab"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#CabBooking -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#CabBooking"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#CabID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#CabID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#CabStatus -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#CabStatus">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#CabType -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#CabType">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Capacity -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Capacity">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#ContactDetails -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#ContactDetails">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Coordinates -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Coordinates">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Distance -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Distance">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Driver -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Driver"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#DriverID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#DriverID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#DropoffTime -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#DropoffTime">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#EndLocation -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#EndLocation">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#EstimatedTime -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#EstimatedTime">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#LicenseNumber -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#LicenseNumber">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Location -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Location"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#LocationID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#LocationID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Name -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Name">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Passenger -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Passenger"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#PassengerID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#PassengerID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#PaymentMethod -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#PaymentMethod">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Passenger"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#PickupTime -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#PickupTime">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Ratings -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Ratings">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Recommendation -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Recommendation"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#RecommendedCab -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#RecommendedCab">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#RecommendedDriver -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#RecommendedDriver">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#RecommendedRoute -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#RecommendedRoute">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#RegistrationNumber -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#RegistrationNumber">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Cab"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Reservation -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Reservation"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#ReservationID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#ReservationID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#ReservationStatus -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#ReservationStatus">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#ReservationTime -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#ReservationTime">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Route -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#Route"/>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#RouteID -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#RouteID">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#SpecialRequest -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#SpecialRequest">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#StartLocation -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#StartLocation">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Location"/>
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#TotalFare -->
+
+    <owl:Class rdf:about="http://example.com/ontologies/cabBooking#TotalFare">
+        <rdfs:subClassOf rdf:resource="http://example.com/ontologies/cabBooking#Reservation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#D456 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#D456">
+        <hasDriver rdf:resource="http://example.com/ontologies/cabBooking#D456"/>
+        <driverID>D456</driverID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Lend -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#Lend">
+        <hasEndLocation rdf:resource="http://example.com/ontologies/cabBooking#Lend"/>
+        <hasEndLocation>tomsville</hasEndLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#Lstart -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#Lstart">
+        <hasStartLocation rdf:resource="http://example.com/ontologies/cabBooking#Lstart"/>
+        <hasStartLocation>villy</hasStartLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#P123 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#P123">
+        <hasPassenger rdf:resource="http://example.com/ontologies/cabBooking#P123"/>
+        <passengerID>P123</passengerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#R123 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#R123">
+        <hasReservation rdf:resource="http://example.com/ontologies/cabBooking#R123"/>
+        <reservation_id>R123</reservation_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#available -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#available">
+        <hasCab rdf:resource="http://example.com/ontologies/cabBooking#available"/>
+        <cabStatus>available</cabStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#cab456 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#cab456">
+        <hasCab rdf:resource="http://example.com/ontologies/cabBooking#cab456"/>
+        <cabID>cab456</cabID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#childseat -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#childseat">
+        <hasSpecialRequest rdf:resource="http://example.com/ontologies/cabBooking#childseat"/>
+        <special_request>childseat</special_request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#creditcard -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#creditcard">
+        <hasPaymentMethod rdf:resource="http://example.com/ontologies/cabBooking#creditcard"/>
+        <paymentMethod>creditcard</paymentMethod>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#jame -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#jame">
+        <drivenBy rdf:resource="http://example.com/ontologies/cabBooking#jame"/>
+        <name>jame</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#james -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#james">
+        <recommendsDriver rdf:resource="http://example.com/ontologies/cabBooking#james"/>
+        <recommendationReason>Good ratings</recommendationReason>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#1hour -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#1hour">
+        <hasEstimatedTime rdf:resource="http://example.com/ontologies/cabBooking#1hour"/>
+        <time>1hour</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#1.5hour -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#1.5hour">
+        <hasEstimatedTime rdf:resource="http://example.com/ontologies/cabBooking#1.5hour"/>
+        <estimated_time>1.5hour</estimated_time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#15km -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#15km">
+        <hasDistance rdf:resource="http://example.com/ontologies/cabBooking#15km"/>
+        <distance>15km</distance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#4">
+        <hasCab rdf:resource="http://example.com/ontologies/cabBooking#4"/>
+        <capacity>4</capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#4.2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#4.2">
+        <hasRating rdf:resource="http://example.com/ontologies/cabBooking#4.2"/>
+        <ratings>4.2</ratings>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#565656 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#565656">
+        <hasLicenseNo rdf:resource="http://example.com/ontologies/cabBooking#565656"/>
+        <licenseNumber>565656</licenseNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#6AM -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#6AM">
+        <hasReservationTime rdf:resource="http://example.com/ontologies/cabBooking#6AM"/>
+        <reservation_time>6AM</reservation_time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#7AM -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#7AM">
+        <hasPickupTime rdf:resource="http://example.com/ontologies/cabBooking#7AM"/>
+        <pickup_time>7AM</pickup_time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#8AM -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#8AM">
+        <hasDropoffTime rdf:resource="http://example.com/ontologies/cabBooking#8AM"/>
+        <dropoff_time>8AM</dropoff_time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#800 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#800">
+        <hasFare rdf:resource="http://example.com/ontologies/cabBooking#800"/>
+        <total_fare>800</total_fare>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontologies/cabBooking#jame@gmail.com -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontologies/cabBooking#jame@gmail.com">
+        <hasDriver rdf:resource="http://example.com/ontologies/cabBooking#jame@gmail.com"/>
+        <contactDetails>jame@gmail.com</contactDetails>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
