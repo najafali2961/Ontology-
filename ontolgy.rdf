@@ -8,9 +8,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://example.com/ontologies/cabBooking">
         <owl:versionIRI rdf:resource="http://example.com/ontologies/cabBooking/2024-05-14"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Ontology for cab booking services</rdfs:comment>
     </owl:Ontology>
-    
+</rdf:RDF>
+
 
 
     <!-- 
