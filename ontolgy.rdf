@@ -10,7 +10,10 @@
         <owl:versionIRI rdf:resource="http://example.com/ontologies/cabBooking/2024-05-14"/>
         <rdfs:comment>Ontology for cab booking services</rdfs:comment>
     </owl:Ontology>
+    <!-- Example link element with proper syntax -->
+    <link crossorigin="anonymous" href="styles.css" rel="stylesheet" />
 </rdf:RDF>
+
 
 
 
